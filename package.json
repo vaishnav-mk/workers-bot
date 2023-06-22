@@ -1,0 +1,21 @@
+{
+  "name": "workers-bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler publish",
+    "start": "wrangler dev src/server.js --remote",
+    "register": "node src/register.js"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "discord-interactions": "^3.4.0",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "itty-router": "^4.0.13"
+  }
+}
