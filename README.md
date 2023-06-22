@@ -14,56 +14,53 @@ Before getting started, make sure you have the following prerequisites:
 
 1. Clone the repository:
 
-   ```bash
+```bash
    git clone https://github.com/vaishnav-mk/workers-bot.git
-   ```
-
+```
 2.Install the dependencies:
-
-    ```bash
+ ```bash
     cd workers-bot
     npm install
-    ```
-
+```
 3. Configure the environment variables:
 
 Create a `.env` file in the project root.
 
 Add the following environment variables to the .env file:
 
-    ```bash
+```bash
     DISCORD_TOKEN=your-discord-token
     DISCORD_PUBLIC_KEY=your-discord-application-id
     DISCORD_APPLICATION_ID=your-discord-application-id
-    ```
+```
 
 4. Configure the Cloudflare Workers CLI:
 
-   ```bash
+```bash
    npm install -g @cloudflare/wrangler
    wrangler config
-   ```
+```
 
 ## Usage
 
 1. Register the commands with Discord:
 
-    ```bash
+```bash
     npm run register
-    ```
+```
 
 2. To run the Discord bot locally, execute the following command:
 
-    ```bash
+```bash
     npm start
-    ```
+```
 ### Use ngrok or Cloudflare Tunnel to expose the local server to the internet and add the URL to the Discord Developer Portal.
 
 3. Publish the Worker:
 
-    ```bash
+```bash
     wrangler publish
-    ``` 
+``` 
 
 ### Use the published URL as the Discord Interactions Endpoint URL in the Discord Developer Portal.
 
